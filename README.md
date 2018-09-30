@@ -18,3 +18,5 @@ K Means
 Decision Tree
 
 Principal Component Analysis
+
+Digit recogintion using KNN
