@@ -88,7 +88,7 @@ if __name__ == "__main__":
   parser.add_argument("--input_std", type=int, help="input std")
   parser.add_argument("--input_layer", help="name of input layer")
   parser.add_argument("--output_layer", help="name of output layer")
-  args = parser.parse_args()
+  args = parser.parse_args() 
 
   if args.graph:
     model_file = args.graph
