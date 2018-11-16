@@ -22,7 +22,6 @@ import sys
 import time
 
 import numpy as np
-from PIL import Image
 import tensorflow as tf
 
 def load_graph(model_file):
@@ -40,34 +39,24 @@ def read_tensor_from_image_file(file_name, input_height=299, input_width=299,
 				input_mean=0, input_std=255):
   input_name = "file_reader"
   output_name = "normalized"
-  #file_reader = tf.read_file(file_name, input_name)
-  #print(file_reader)
-  if(0):
-    if file_name.endswith(".png"):
-      image_reader = tf.image.decode_png(file_reader, channels = 3,
-                                         name='png_reader')
-    elif file_name.endswith(".gif"):
-      image_reader = tf.squeeze(tf.image.decode_gif(file_reader,
-                                                    name='gif_reader'))
-    elif file_name.endswith(".bmp"):
-      image_reader = tf.image.decode_bmp(file_reader, name='bmp_reader')
-    else:
-      #image_reader = tf.image.decode_jpeg(file_reader, channels = 3,
-      #                                    name='jpeg_reader')
-      print("it's a .jpg file indeed\n\n")
-      image_reader = tf.image.decode_image(file_reader, channels = 3,
-                                          name='jpeg_reader')
-  image_reader=file_name
-
+  file_reader = tf.read_file(file_name, input_name)
+  if file_name.endswith(".png"):
+    image_reader = tf.image.decode_png(file_reader, channels = 3,
+                                       name='png_reader')
+  elif file_name.endswith(".gif"):
+    image_reader = tf.squeeze(tf.image.decode_gif(file_reader,
+                                                  name='gif_reader'))
+  elif file_name.endswith(".bmp"):
+    image_reader = tf.image.decode_bmp(file_reader, name='bmp_reader')
+  else:
+    image_reader = tf.image.decode_jpeg(file_reader, channels = 3,
+                                        name='jpeg_reader')
   float_caster = tf.cast(image_reader, tf.float32)
   dims_expander = tf.expand_dims(float_caster, 0);
   resized = tf.image.resize_bilinear(dims_expander, [input_height, input_width])
   normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
   sess = tf.Session()
   result = sess.run(normalized)
-  print(image_reader)
-  print(result)
-  print(result==image_reader)
 
   return result
 
@@ -121,16 +110,12 @@ if __name__ == "__main__":
     output_layer = args.output_layer
 
   graph = load_graph(model_file)
-  import cv2
-  img=Image.open(file_name)
-  image_array=np.array(img)
-
-  t = read_tensor_from_image_file(image_array,
+  t = read_tensor_from_image_file(file_name,
                                   input_height=input_height,
                                   input_width=input_width,
                                   input_mean=input_mean,
                                   input_std=input_std)
-  #print(t)
+
   input_name = "import/" + input_layer
   output_name = "import/" + output_layer
   input_operation = graph.get_operation_by_name(input_name);
