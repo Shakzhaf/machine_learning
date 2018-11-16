@@ -5,7 +5,7 @@ from __future__ import print_function
 import argparse
 import sys
 import time
-import cv2
+
 import numpy as np
 import tensorflow as tf
 
@@ -21,13 +21,12 @@ def load_graph(model_file):
   return graph
 
 def read_tensor_from_image_file(tfImage, input_height=299, input_width=299,
-        input_mean=0, input_std=255):
+				input_mean=0, input_std=255):
   input_name = "file_reader"
   output_name = "normalized"
   image_np = tfImage
-  mean_img = image_np.mean()
-  neg_mask = image_np < mean_img
-  pos_mask = image_np >=mean_img
+  neg_mask = image_np < image_np.mean()
+  pos_mask = image_np >=image_np.mean()
   image_np[neg_mask]=0
   image_np[pos_mask]=1
 
@@ -114,12 +113,8 @@ if __name__ == "__main__":
   with graph.as_default():
     with tf.Session(graph=graph) as sess:
       while (ret):
-        ret,tfImage = cap.read()
-        cv2.imshow('image',cv2.resize(tfImage,(800,600)))
-        if cv2.waitKey(25) & 0xFF == ord('q'):
-          cv2.destroyAllWindows()
-          cap.release()
-          break
+        ret,image_np = cap.read()
+        tfImage = image_np
         t = read_tensor_from_image_file(tfImage,
                                         input_height=input_height,
                                         input_width=input_width,
@@ -139,9 +134,13 @@ if __name__ == "__main__":
         template = "{} (score={:0.5f})"
         #for i in top_k:
         i=top_k[0]
-        print(template.format(labels[i], results[i]))
-        
-  print("See you again!")
+        print(template.format(labels[0], results[0]))
+        cv2.imshow('image',cv2.resize(t,(800,600)))
+        if cv2.waitKey(25) & 0xFF == ord('q'):
+          cv2.destroyAllWindows()
+          cap.release()
+          break
+  print(results)
   '''
   if(results[i]<0.97000):
           labels[i]='fist'

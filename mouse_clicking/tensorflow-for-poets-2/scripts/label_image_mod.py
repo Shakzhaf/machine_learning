@@ -61,7 +61,7 @@ def read_tensor_from_image_file(file_name, input_height=299, input_width=299,inp
   #image_array=np.array(openCVImage)[:, :, 0:3]
   #image_reader=file_name
   image_reader = np.expand_dims(image_np, axis=0)
-  print(image_reader.shape)
+  #print(image_reader.shape)
   #print(image_reader)
   float_caster = tf.cast(image_reader, tf.float32)
   dims_expander=float_caster
