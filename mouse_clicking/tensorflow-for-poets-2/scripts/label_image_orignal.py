@@ -12,16 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 # ==============================================================================
- from __future__ import absolute_import
+from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
- import argparse
+import argparse
 import sys
 import time
- import numpy as np
+import numpy as np
 from PIL import Image
 import tensorflow as tf
- def load_graph(model_file):
+def load_graph(model_file):
   graph = tf.Graph()
   graph_def = tf.GraphDef()
    with open(model_file, "rb") as f:
@@ -30,7 +30,7 @@ import tensorflow as tf
     tf.import_graph_def(graph_def)
    return graph
  def read_tensor_from_image_file(file_name, input_height=299, input_width=299,
-				input_mean=0, input_std=255):
+        input_mean=0, input_std=255):
   input_name = "file_reader"
   output_name = "normalized"
   #file_reader = tf.read_file(file_name, input_name)
