@@ -20,6 +20,7 @@ import sys
 import time
 import numpy as np
 from PIL import Image
+import cv2
 import tensorflow as tf
 def load_graph(model_file):
   graph = tf.Graph()
@@ -33,7 +34,7 @@ def read_tensor_from_image_file(file_name, input_height=299, input_width=299,inp
   input_name = "file_reader"
   output_name = "normalized"
   #file_reader = tf.read_file(file_name, input_name)
-  #print(file_reader)
+  #print('file reader looks like\n',file_reader)
   if(0):
     if file_name.endswith(".png"):
       image_reader = tf.image.decode_png(file_reader, channels = 3,
@@ -44,21 +45,37 @@ def read_tensor_from_image_file(file_name, input_height=299, input_width=299,inp
     elif file_name.endswith(".bmp"):
       image_reader = tf.image.decode_bmp(file_reader, name='bmp_reader')
     else:
+      pass
       #image_reader = tf.image.decode_jpeg(file_reader, channels = 3,
       #                                    name='jpeg_reader')
-      print("it's a .jpg file indeed\n\n")
-      image_reader = tf.image.decode_image(file_reader, channels = 3,
-                                          name='jpeg_reader')
-  image_reader=file_name
+  #print("Image reader looks like\n")
+  #image_reader = tf.image.decode_jpeg(file_reader, channels = 3, name='jpeg_reader')
+  #print(image_reader)
+  #img=Image.open(file_name)
+  image_np = cv2.imread(file_name)
+  neg_mask = image_np < image_np.mean()
+  pos_mask = image_np >=image_np.mean()
+  image_np[neg_mask]=0
+  image_np[pos_mask]=1
+
+  #image_array=np.array(openCVImage)[:, :, 0:3]
+  #image_reader=file_name
+  image_reader = np.expand_dims(image_np, axis=0)
+  print(image_reader.shape)
+  #print(image_reader)
   float_caster = tf.cast(image_reader, tf.float32)
-  dims_expander = tf.expand_dims(float_caster, 0);
-  resized = tf.image.resize_bilinear(dims_expander, [input_height, input_width])
-  normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
+  dims_expander=float_caster
+  
+  #dims_expander = tf.expand_dims(float_caster, 0);
+  resized = tf.image.resize_bilinear(float_caster, [input_height, input_width])
+  #normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
+  
+  
   sess = tf.Session()
-  result = sess.run(normalized)
-  print(image_reader)
+  result = sess.run(resized)
+  #print(sess.eval(result))
   print(result)
-  print(result==image_reader)
+  #print(result==image_reader)
   return result
 
 
@@ -70,7 +87,7 @@ def load_labels(label_file):
   return label
 
 if __name__ == "__main__":
-  file_name = "tf_files/flower_photos/daisy/3475870145_685a19116d.jpg"
+  file_name = "pic_005.jpg"
   model_file = "tf_files/retrained_graph.pb"
   label_file = "tf_files/retrained_labels.txt"
   input_height = 299
@@ -109,10 +126,8 @@ if __name__ == "__main__":
   if args.output_layer:
     output_layer = args.output_layer
   graph = load_graph(model_file)
-  import cv2
-  img=Image.open(file_name)
-  image_array=np.array(img)
-  t = read_tensor_from_image_file(image_array,
+  
+  t = read_tensor_from_image_file(file_name,
                                   input_height=input_height,
                                   input_width=input_width,
                                   input_mean=input_mean,
