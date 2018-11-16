@@ -74,7 +74,7 @@ def read_tensor_from_image_file(file_name, input_height=299, input_width=299,inp
   sess = tf.Session()
   result = sess.run(resized)
   #print(sess.eval(result))
-  print(result)
+  #print(result)
   #print(result==image_reader)
   return result
 
