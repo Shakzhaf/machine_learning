@@ -24,31 +24,16 @@ def read_tensor_from_image_file(tfImage, input_height=299, input_width=299,
         input_mean=0, input_std=255):
   input_name = "file_reader"
   output_name = "normalized"
-  image_np = tfImage
-  mean_img = image_np.mean()
+  image_np = cv2.resize(tfImage,(input_height,input_width))
+  mean_img = 108                    #image_np.mean()
   neg_mask = image_np < mean_img
   pos_mask = image_np >=mean_img
   image_np[neg_mask]=0
   image_np[pos_mask]=1
-
-  #image_array=np.array(openCVImage)[:, :, 0:3]
-  #image_reader=file_name
   image_reader = np.expand_dims(image_np, axis=0)
-  #print(image_reader.shape)
-  #print(image_reader)
   float_caster = tf.cast(image_reader, tf.float32)
-  dims_expander=float_caster
-  
-  #dims_expander = tf.expand_dims(float_caster, 0);
-  resized = tf.image.resize_bilinear(float_caster, [input_height, input_width])
-  #normalized = tf.divide(tf.subtract(resized, [input_mean]), [input_std])
-  
-  
   sess = tf.Session()
-  result = sess.run(resized)
-  #print(sess.eval(result))
-  #print(result)
-  #print(result==image_reader)
+  result = sess.run(float_caster)
   return result
 
 def load_labels(label_file):
@@ -59,7 +44,6 @@ def load_labels(label_file):
   return label
 
 if __name__ == "__main__":
-  #file_name = "tf_files/flower_photos/daisy/3475870145_685a19116d.jpg"
   model_file = "tf_files/retrained_graph.pb"
   label_file = "tf_files/retrained_labels.txt"
   input_height = 299
@@ -83,8 +67,6 @@ if __name__ == "__main__":
 
   if args.graph:
     model_file = args.graph
-  #if args.image:
-  #  file_name = args.image
   if args.labels:
     label_file = args.labels
   if args.input_height:
@@ -100,8 +82,8 @@ if __name__ == "__main__":
   if args.output_layer:
     output_layer = args.output_layer
 
-  import cv2
   cap = cv2.VideoCapture(0)
+  ret = True
 
   graph = load_graph(model_file)
   input_name = "import/" + input_layer
@@ -109,7 +91,6 @@ if __name__ == "__main__":
   input_operation = graph.get_operation_by_name(input_name);
   output_operation = graph.get_operation_by_name(output_name);
   labels = load_labels(label_file)
-  ret = True
 
   with graph.as_default():
     with tf.Session(graph=graph) as sess:
@@ -120,6 +101,7 @@ if __name__ == "__main__":
           cv2.destroyAllWindows()
           cap.release()
           break
+
         t = read_tensor_from_image_file(tfImage,
                                         input_height=input_height,
                                         input_width=input_width,
