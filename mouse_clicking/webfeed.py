@@ -89,8 +89,8 @@ while (ret):
 
 
 	try:
-		if(cv2.isContourConvex(contours)):
-			print('convex')
+		#if(cv2.isContourConvex(contours)):
+		#	print('convex')
 
 		rect = cv2.boundingRect(cnt[0])
 		x,y,w,h = rect
