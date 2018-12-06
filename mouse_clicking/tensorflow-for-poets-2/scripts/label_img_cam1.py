@@ -101,7 +101,7 @@ if __name__ == "__main__":
     output_layer = args.output_layer
 
   import cv2
-  cap = cv2.VideoCapture(0)
+  cap = cv2.VideoCapture(cv2.CAP_DSHOW)
 
   graph = load_graph(model_file)
   input_name = "import/" + input_layer
