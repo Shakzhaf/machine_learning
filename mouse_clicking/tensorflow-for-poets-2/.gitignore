@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+**/*.pyc
+tf_files
+.idea/
+**/*~
+gradle*
+libs/
+local.properties
+android.iml
+.gradle/
+android/assets/*
+=======
+**/*.pyc
+tf_files
+.idea/
+**/*~
+gradle*
+libs/
+local.properties
+android.iml
+.gradle/
+android/assets/*
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
