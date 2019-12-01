@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -47,6 +50,7 @@
 	</array>
 </dict>
 </plist>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -96,4 +100,6 @@
 	</array>
 </dict>
 </plist>
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

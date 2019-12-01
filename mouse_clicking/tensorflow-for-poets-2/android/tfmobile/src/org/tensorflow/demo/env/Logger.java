@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 /* Copyright 2015 The TensorFlow Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -190,6 +193,7 @@ public final class Logger {
     }
   }
 }
+<<<<<<< HEAD
 =======
 /* Copyright 2015 The TensorFlow Authors. All Rights Reserved.
 
@@ -382,4 +386,6 @@ public final class Logger {
     }
   }
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

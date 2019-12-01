@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 /*
  * Copyright 2016 The TensorFlow Authors. All Rights Reserved.
  *
@@ -218,6 +221,7 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
   protected abstract int getLayoutId();
   protected abstract Size getDesiredPreviewFrameSize();
 }
+<<<<<<< HEAD
 =======
 /*
  * Copyright 2016 The TensorFlow Authors. All Rights Reserved.
@@ -438,4 +442,6 @@ public abstract class CameraActivity extends Activity implements OnImageAvailabl
   protected abstract int getLayoutId();
   protected abstract Size getDesiredPreviewFrameSize();
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

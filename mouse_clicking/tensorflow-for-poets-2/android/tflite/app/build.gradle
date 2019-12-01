@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 apply plugin: 'com.android.application'
 
 project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
@@ -59,6 +62,7 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
+<<<<<<< HEAD
 =======
 apply plugin: 'com.android.application'
 
@@ -120,4 +124,6 @@ dependencies {
 
     testCompile 'junit:junit:4.12'
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

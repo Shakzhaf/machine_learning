@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2016 The TensorFlow Authors. All Rights Reserved.
 
@@ -50,6 +53,7 @@
     android:layout_height="match_parent"
     android:layout_alignParentTop="true" />
 </RelativeLayout>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2016 The TensorFlow Authors. All Rights Reserved.
@@ -102,4 +106,6 @@
     android:layout_height="match_parent"
     android:layout_alignParentTop="true" />
 </RelativeLayout>
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

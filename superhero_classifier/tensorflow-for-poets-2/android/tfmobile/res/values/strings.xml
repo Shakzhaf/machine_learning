@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2016 The TensorFlow Authors. All Rights Reserved.
 
@@ -19,6 +22,7 @@
     <string name="request_permission">This sample needs camera permission.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
 </resources>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2016 The TensorFlow Authors. All Rights Reserved.
@@ -40,4 +44,6 @@
     <string name="request_permission">This sample needs camera permission.</string>
     <string name="camera_error">This device doesn\'t support Camera2 API.</string>
 </resources>
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 # TensorFlow Android Camera Demo
 
 This folder contains an example application utilizing TensorFlow for Android
@@ -175,6 +178,7 @@ NDK).
 Full CMake support for the demo is coming soon, but for now it is possible to
 build the TensorFlow Android Inference library using
 [tensorflow/contrib/android/cmake](../../../tensorflow/contrib/android/cmake).
+<<<<<<< HEAD
 =======
 # TensorFlow Android Camera Demo
 
@@ -352,4 +356,6 @@ NDK).
 Full CMake support for the demo is coming soon, but for now it is possible to
 build the TensorFlow Android Inference library using
 [tensorflow/contrib/android/cmake](../../../tensorflow/contrib/android/cmake).
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

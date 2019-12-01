@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 package(default_visibility = ["//visibility:private"])
 
 licenses(["notice"])  # Apache 2.0
@@ -40,6 +43,7 @@ filegroup(
     ),
     visibility = ["//tensorflow:__subpackages__"],
 )
+<<<<<<< HEAD
 =======
 package(default_visibility = ["//visibility:private"])
 
@@ -82,4 +86,6 @@ filegroup(
     ),
     visibility = ["//tensorflow:__subpackages__"],
 )
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

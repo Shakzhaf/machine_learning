@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 #!/usr/bin/python
 #
 # Copyright 2017 Google Inc.
@@ -45,6 +48,7 @@ if __name__ == "__main__":
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
   print(count_ops(*sys.argv[1:]))
 
+<<<<<<< HEAD
 =======
 #!/usr/bin/python
 #
@@ -92,4 +96,6 @@ if __name__ == "__main__":
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
   print(count_ops(*sys.argv[1:]))
 
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

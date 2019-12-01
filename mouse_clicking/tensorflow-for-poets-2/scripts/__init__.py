@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 #!/usr/bin/python
 #
 # Copyright 2017 Google Inc.
@@ -17,6 +20,7 @@
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+<<<<<<< HEAD
 =======
 #!/usr/bin/python
 #
@@ -36,4 +40,6 @@ from __future__ import print_function
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

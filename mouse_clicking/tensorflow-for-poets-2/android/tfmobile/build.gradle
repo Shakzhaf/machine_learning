@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 // This file provides basic support for building the TensorFlow demo
 // in Android Studio with Gradle.
 //
@@ -76,6 +79,7 @@ android {
 
 repositories {
     google()
+<<<<<<< HEAD
 =======
 // This file provides basic support for building the TensorFlow demo
 // in Android Studio with Gradle.
@@ -154,5 +158,7 @@ android {
 
 repositories {
     google()
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 }

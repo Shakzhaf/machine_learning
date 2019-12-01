@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 // Copyright 2017 The TensorFlow Authors. All Rights Reserved.
 
 //
@@ -27,6 +30,7 @@ int main(int argc, char* argv[]) {
   }
   return retVal;
 }
+<<<<<<< HEAD
 =======
 // Copyright 2017 The TensorFlow Authors. All Rights Reserved.
 
@@ -56,4 +60,6 @@ int main(int argc, char* argv[]) {
   }
   return retVal;
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

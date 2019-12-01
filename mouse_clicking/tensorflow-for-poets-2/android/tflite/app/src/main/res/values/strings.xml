@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2014 The Android Open Source Project
 
@@ -23,6 +26,7 @@
     <string name="toggle_turn_off">NN:Off</string>
     <string name="toggle">Use NNAPI</string>
 </resources>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2014 The Android Open Source Project
@@ -48,4 +52,6 @@
     <string name="toggle_turn_off">NN:Off</string>
     <string name="toggle">Use NNAPI</string>
 </resources>
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

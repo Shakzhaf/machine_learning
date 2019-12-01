@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2014 The Android Open Source Project
 
@@ -21,6 +24,7 @@
     android:layout_height="match_parent"
     android:background="#000"
     tools:context="com.example.android.tflitecamerademo.CameraActivity" />
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="utf-8"?><!--
  Copyright 2014 The Android Open Source Project
@@ -44,4 +48,6 @@
     android:layout_height="match_parent"
     android:background="#000"
     tools:context="com.example.android.tflitecamerademo.CameraActivity" />
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

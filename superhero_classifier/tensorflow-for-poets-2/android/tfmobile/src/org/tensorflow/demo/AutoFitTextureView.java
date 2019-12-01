@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 /*
  * Copyright 2016 The TensorFlow Authors. All Rights Reserved.
  *
@@ -73,6 +76,7 @@ public class AutoFitTextureView extends TextureView {
     }
   }
 }
+<<<<<<< HEAD
 =======
 /*
  * Copyright 2016 The TensorFlow Authors. All Rights Reserved.
@@ -148,4 +152,6 @@ public class AutoFitTextureView extends TextureView {
     }
   }
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

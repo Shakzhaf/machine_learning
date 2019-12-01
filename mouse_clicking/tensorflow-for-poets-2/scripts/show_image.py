@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 #!/usr/bin/python
 #
 # Copyright 2017 Google Inc.
@@ -34,6 +37,7 @@ def show_image(image_path):
     image_rel = image_path.replace(root,'')
     caption = "Image " + ' - '.join(attributions[image_rel].split(' - ')[:-1])
     display(HTML("<div>%s</div>" % caption))
+<<<<<<< HEAD
 =======
 #!/usr/bin/python
 #
@@ -70,4 +74,6 @@ def show_image(image_path):
     image_rel = image_path.replace(root,'')
     caption = "Image " + ' - '.join(attributions[image_rel].split(' - ')[:-1])
     display(HTML("<div>%s</div>" % caption))
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

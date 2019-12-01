@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 # Copyright 2017 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -136,6 +139,7 @@ if __name__ == "__main__":
   template = "{} (score={:0.5f})"
   for i in top_k:
     print(template.format(labels[i], results[i]))
+<<<<<<< HEAD
 =======
 # Copyright 2017 The TensorFlow Authors. All Rights Reserved.
 #
@@ -274,4 +278,6 @@ if __name__ == "__main__":
   template = "{} (score={:0.5f})"
   for i in top_k:
     print(template.format(labels[i], results[i]))
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

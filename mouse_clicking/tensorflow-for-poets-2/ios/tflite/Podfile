@@ -1,13 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 platform :ios, '8.0'
 inhibit_all_warnings!
 
 target 'tflite_photos_example'
        pod 'TensorFlowLite'
+<<<<<<< HEAD
 =======
 platform :ios, '8.0'
 inhibit_all_warnings!
 
 target 'tflite_photos_example'
        pod 'TensorFlowLite'
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

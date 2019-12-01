@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 /* Copyright 2016 The TensorFlow Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,6 +26,7 @@ import java.util.List;
 public interface ResultsView {
   public void setResults(final List<Recognition> results);
 }
+<<<<<<< HEAD
 =======
 /* Copyright 2016 The TensorFlow Authors. All Rights Reserved.
 
@@ -48,4 +52,6 @@ import java.util.List;
 public interface ResultsView {
   public void setResults(final List<Recognition> results);
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 # machine_learning
 Implementation of several machine learning algorithms
 
@@ -21,6 +24,7 @@ Decision Tree
 Principal Component Analysis
 
 Digit recogintion using KNN
+<<<<<<< HEAD
 =======
 # machine_learning
 Implementation of several machine learning algorithms
@@ -44,4 +48,6 @@ Decision Tree
 Principal Component Analysis
 
 Digit recogintion using KNN
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

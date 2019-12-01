@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 **/*.pyc
 tf_files
 .idea/
@@ -9,6 +12,7 @@ local.properties
 android.iml
 .gradle/
 android/assets/*
+<<<<<<< HEAD
 =======
 **/*.pyc
 tf_files
@@ -20,4 +24,6 @@ local.properties
 android.iml
 .gradle/
 android/assets/*
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

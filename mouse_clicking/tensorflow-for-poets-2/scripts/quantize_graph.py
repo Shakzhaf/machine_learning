@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 # Copyright 2015 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -1301,6 +1304,7 @@ def main(unused_args):
 if __name__ == "__main__":
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
   app.run()
+<<<<<<< HEAD
 =======
 # Copyright 2015 The TensorFlow Authors. All Rights Reserved.
 #
@@ -2604,4 +2608,6 @@ def main(unused_args):
 if __name__ == "__main__":
   os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
   app.run()
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

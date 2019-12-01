@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
  Copyright 2013 The Android Open Source Project
@@ -23,6 +26,7 @@
     </style>
 
 </resources>
+<<<<<<< HEAD
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
@@ -48,4 +52,6 @@
     </style>
 
 </resources>
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

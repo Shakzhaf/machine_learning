@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 /*
  * Copyright 2017 The Android Things Samples Authors.
  *
@@ -238,6 +241,7 @@ public class ImageUtils {
         return matrix;
     }
 }
+<<<<<<< HEAD
 =======
 /*
  * Copyright 2017 The Android Things Samples Authors.
@@ -478,4 +482,6 @@ public class ImageUtils {
         return matrix;
     }
 }
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

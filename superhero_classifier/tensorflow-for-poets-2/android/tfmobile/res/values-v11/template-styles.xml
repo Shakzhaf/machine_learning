@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 <!--
   Copyright 2013 The TensorFlow Authors. All Rights Reserved.
 
@@ -21,6 +24,7 @@
     <style name="Theme.Base" parent="android:Theme.Holo.Light" />
 
 </resources>
+<<<<<<< HEAD
 =======
 <!--
   Copyright 2013 The TensorFlow Authors. All Rights Reserved.
@@ -44,4 +48,6 @@
     <style name="Theme.Base" parent="android:Theme.Holo.Light" />
 
 </resources>
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

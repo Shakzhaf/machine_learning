@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
@@ -130,6 +133,7 @@ if __name__ == "__main__":
           labels[i]='fist'
           results[i]=results[top_k[1]]
   '''
+<<<<<<< HEAD
 =======
 from __future__ import absolute_import
 from __future__ import division
@@ -262,4 +266,6 @@ if __name__ == "__main__":
           labels[i]='fist'
           results[i]=results[top_k[1]]
   '''
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
+=======
 >>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b

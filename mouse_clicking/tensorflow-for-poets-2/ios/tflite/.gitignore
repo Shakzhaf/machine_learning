@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /data/*.txt
 /data/*lite
+=======
+/data/*.txt
+/data/*lite
+>>>>>>> 7f807316aa2366b4fa08e23f19d08388ab45ca5b
 =======
 /data/*.txt
 /data/*lite
