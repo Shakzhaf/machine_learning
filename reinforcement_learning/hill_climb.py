@@ -7,8 +7,8 @@ env = gym.make("MountainCar-v0")
 LEARNING_RATE = 0.1
 
 DISCOUNT = 0.95
-EPISODES = 1000
-SHOW_EVERY = 200
+EPISODES = 2000
+SHOW_EVERY = 250
 
 DISCRETE_OS_SIZE = [20, 20]
 discrete_os_win_size = (env.observation_space.high - env.observation_space.low)/DISCRETE_OS_SIZE
@@ -76,6 +76,7 @@ for episode in range(EPISODES):
         elif new_state[0] >= env.goal_position:
             #q_table[discrete_state + (action,)] = reward
             q_table[discrete_state + (action,)] = 0
+            print('we made it on episode {}'.format(episode))
 
         discrete_state = new_discrete_state
 
