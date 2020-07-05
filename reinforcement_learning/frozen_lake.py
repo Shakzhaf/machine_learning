@@ -15,7 +15,7 @@ print("Number of actions : ",env.action_space.n)
 print("Number of states : ",env.observation_space.n)
 
 def epsilon_greedy(Q,current_state,na):
-    epsilon = 0.3
+    epsilon = 0.6
     p = np.random.uniform(low=0,high=1)
     #print(p)
     if p > epsilon:
